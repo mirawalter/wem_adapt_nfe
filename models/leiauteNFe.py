@@ -29,25 +29,25 @@ class DetPag(models.AbstractModel):
 
 def _compute_formapagamentonfe(self):
     if self.wem_formapagamento == 'dinheiro':
-        self.nfe40_tPag = 01
+        self.nfe40_tPag = '01'
     if self.wem_formapagamento == 'cheque':
-        self.nfe40_tPag = 02
+        self.nfe40_tPag = '02'
     if self.wem_formapagamento == 'cartaocredito':
-        self.nfe40_tPag = 03
+        self.nfe40_tPag = '03'
     if self.wem_formapagamento == 'cartaodebito':
-        self.nfe40_tPag = 04
+        self.nfe40_tPag = '04'
     if self.wem_formapagamento == 'creditoloja':
-        self.nfe40_tPag = 05
+        self.nfe40_tPag = '05'
     if self.wem_formapagamento == 'valealimentacao':
-        self.nfe40_tPag = 10
+        self.nfe40_tPag = '10'
     if self.wem_formapagamento == 'valerefeicao':
-        self.nfe40_tPag = 11
+        self.nfe40_tPag = '11'
     if self.wem_formapagamento == 'valepresente':
-        self.nfe40_tPag = 12
+        self.nfe40_tPag = '12'
     if self.wem_formapagamento == 'valecombustivel':
-        self.nfe40_tPag = 13
+        self.nfe40_tPag = '13'
     if self.wem_formapagamento == 'outros':
-        self.nfe40_tPag = 99
+        self.nfe40_tPag = '99'
 
 def _compute_avistaouaprazo(self):
     if self.wem_avistaouaprazo == 'avista':
