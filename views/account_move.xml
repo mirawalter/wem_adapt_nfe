@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="account_view_move_form" model="ir.ui.view">
+            <field name="name">account.move.form</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='invoice_payment_term_id']" position="before">
+                    <field name="nfe40_detPag">
+                        <form>
+                            <span>Forma de pagamento: </span>
+                            <field name="wem_formapagamento"/>
+                            <br/>
+                            <span>À vista ou a prazo? </span>
+                            <field name="wem_avistaouaprazo"/>
+                        </form>
+                    </field>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
