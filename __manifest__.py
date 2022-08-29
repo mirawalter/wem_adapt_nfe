@@ -13,8 +13,7 @@ Módulo brasileiro para adaptação de rotinas de emissão de nota fiscal.
 
 Adapta e melhora o processo de emissão de nota fiscal dos módulos l10n_br. Torna diversos campos mais intuitivos no preenchimento.
     """,
-    "data": [
-        "view/account_move.xml"]
+    "data": ["view/account_move.xml"],
     'installable': True,
     'auto_install': False,
 }
