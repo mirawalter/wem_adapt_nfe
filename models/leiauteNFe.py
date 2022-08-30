@@ -51,6 +51,6 @@ def _compute_formapagamentonfe(self):
 
 def _compute_avistaouaprazo(self):
     if self.wem_avistaouaprazo == 'avista':
-        self.nfe40_indPag = [01]
+        self.nfe40_indPag = '01'
     if self.wem_avistaouaprazo == 'aprazo':
-        self.nfe40_indPag = [02]
+        self.nfe40_indPag = '02'
